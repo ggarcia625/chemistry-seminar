@@ -4,16 +4,14 @@ import Elments from "../components/Elements";
 
 const PeriodicTable: React.FC = () => {
   return (
-    <div style={{ backgroundColor: "#fff", }}>
+    <div style={{ backgroundColor: "#fff" }}>
       <div
         style={{
           display: "flex",
-          alignItems: "center",
           justifyContent: "space-between",
         }}
       >
         <img
-          style={{ marginLeft: "3rem" }}
           src={ascLogo}
           height="100"
           width="300"
@@ -24,6 +22,7 @@ const PeriodicTable: React.FC = () => {
             color: "rgb(0, 41, 207)",
             width: "60%",
             padding: "1rem",
+            marginTop: 0,
           }}
           className="sliced-element"
         >
