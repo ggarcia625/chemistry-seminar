@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import ElementModal from "./ElementModal";
 import {
   elementsNoActinidesOrLanthanides,
@@ -44,6 +44,7 @@ const Elments: React.FC = () => {
             <ElementTile
               element={element}
               handleElementClick={handleElementClick}
+              key={element.symbol}
             />
           ))}
         </div>

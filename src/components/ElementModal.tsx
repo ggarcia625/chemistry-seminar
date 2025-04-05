@@ -1,7 +1,7 @@
 import React from "react";
 
 interface ModalProps {
-  isOpen: Boolean;
+  isOpen: boolean;
   onClose: () => void;
   element: { symbol: string; name: string; atomicNumber: number };
 }
