@@ -11,11 +11,7 @@ const PeriodicTable: React.FC = () => {
           justifyContent: "space-between",
         }}
       >
-        <img
-          src={ascLogo}
-          height="100"
-          width="300"
-        />
+        <img src={ascLogo} height="100" width="300" />
         <h1
           style={{
             backgroundColor: "rgb(248, 205, 49)",

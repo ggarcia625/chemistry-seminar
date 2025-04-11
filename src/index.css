@@ -86,7 +86,7 @@ button:focus-visible {
   font-size: 2vw;
   font-weight: bold;
   color: #fff;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .element-symbol-lan-act {
@@ -152,6 +152,8 @@ button:focus-visible {
   right: 0;
   bottom: 200px;
   display: flex;
+  background-color: 'yellow';
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -198,4 +200,10 @@ button:hover {
 
 .shake {
   animation: shake 0.3s infinite ease-in-out;
+}
+
+.reactant {
+  display: flex;
+  flex-grow: 1;
+  width: 200px
 }
