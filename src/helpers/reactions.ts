@@ -9,7 +9,7 @@ export interface Reaction {
 type reactantsType = Record<string, Reaction>;
 
 export const reactions: reactantsType = {
-  's+o+u': {
+  "s+o+u": {
     formula: "S+O+U",
     name: "SOU Story",
     description:
@@ -21,10 +21,10 @@ export const reactions: reactantsType = {
     description:
       "A powerful combination representing your passion for software development!",
   },
-  's+o+u+bi': {
-    formula: 'S+O+U+Bi',
-    name: 'Capstone',
-    description: 'Capstone research project with Anna'
-  }
+  "s+o+u+bi": {
+    formula: "S+O+U+Bi",
+    name: "Capstone",
+    description: "Capstone research project with Anna",
+  },
   // Add more here...
 };

@@ -7,23 +7,25 @@ import ResultModal from "./ResultModal";
 interface ReactantsProps {
   selectedReactants: Element[];
   setSelectedReactants: React.Dispatch<React.SetStateAction<Element[]>>;
-  handleCloseModal: () => void;
 }
 
 const Reactants: React.FC<ReactantsProps> = ({
   selectedReactants,
   setSelectedReactants,
-  handleCloseModal,
 }) => {
-  const [reactionResult, setReactionResult] = useState<Reaction | string>('');
-
+  const [reactionResult, setReactionResult] = useState<Reaction | string>("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleReact = () => {
-    const reactionKey = selectedReactants.map((e) => e.symbol).join("+").toLocaleLowerCase();
+    const reactionKey = selectedReactants
+      .map((e) => e.symbol)
+      .join("+")
+      .toLocaleLowerCase();
     const result: Reaction = reactions[reactionKey];
-
+    setIsModalOpen(true);
     if (result) {
       setReactionResult(result);
+      
     } else {
       setReactionResult(`No known reaction for ${reactionKey}`);
     }
@@ -34,6 +36,8 @@ const Reactants: React.FC<ReactantsProps> = ({
       prev.filter((e) => e.atomicNumber !== atomicNumber)
     );
   };
+
+  const handleCloseModal = () => setIsModalOpen(false);
 
   return (
     <div className="reactants-container">
@@ -53,9 +57,13 @@ const Reactants: React.FC<ReactantsProps> = ({
           React
         </button>
       )}
-      {reactionResult && (
+      {isModalOpen && (
         <div className="reaction-result">
-          <ResultModal isOpen={Boolean(reactionResult)} result={reactionResult} onClose={handleCloseModal} />
+          <ResultModal
+            isOpen={isModalOpen}
+            result={reactionResult}
+            onClose={handleCloseModal}
+          />
         </div>
       )}
     </div>

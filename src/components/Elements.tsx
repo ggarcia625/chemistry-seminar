@@ -38,9 +38,12 @@ const Elements: React.FC = () => {
 
   return (
     <div>
-      <button onClick={toggleReactantMode} >
-        {reactantMode ? "Exit Reactant Mode" : "Add Reactants"}
-      </button>
+      {reactantMode && (
+        <Reactants
+          selectedReactants={reactants}
+          setSelectedReactants={setReactants}
+        />
+      )}
 
       <div className="periodic-table" key="upperTable">
         {elementsNoActinidesOrLanthanides.map((element) =>
@@ -69,14 +72,6 @@ const Elements: React.FC = () => {
         </div>
       </div>
 
-      {reactantMode && (
-        <Reactants
-          selectedReactants={reactants}
-          setSelectedReactants={setReactants}
-          handleCloseModal={handleCloseModal}
-        />
-      )}
-
       {!reactantMode && selectedElement && (
         <ElementModal
           isOpen={isModalOpen}
@@ -84,6 +79,9 @@ const Elements: React.FC = () => {
           element={selectedElement}
         />
       )}
+       <button onClick={toggleReactantMode} style={{ marginTop: '25px' }}>
+        {reactantMode ? "Exit Reactant Mode" : "Add Reactants"}
+      </button>
     </div>
   );
 };
