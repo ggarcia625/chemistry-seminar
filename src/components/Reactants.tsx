@@ -41,7 +41,7 @@ const Reactants: React.FC<ReactantsProps> = ({
       <div className="reactants-grid">
         {selectedReactants.map((element) => (
           <div key={element.atomicNumber} className="reactant-tile-wrapper">
-              <ElementTile
+            <ElementTile
               element={element}
               handleElementClick={() => handleRemove(element.atomicNumber)}
             />
@@ -55,7 +55,7 @@ const Reactants: React.FC<ReactantsProps> = ({
       )}
       {reactionResult && (
         <div className="reaction-result">
-          <ResultModal isOpen={Boolean(reactionResult)} result={reactionResult} onClose={handleCloseModal}/>
+          <ResultModal isOpen={Boolean(reactionResult)} result={reactionResult} onClose={handleCloseModal} />
         </div>
       )}
     </div>
