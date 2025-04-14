@@ -207,3 +207,48 @@ button:hover {
   flex-grow: 1;
   width: 200px
 }
+
+.reactants-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  display: 'flex';
+
+}
+
+.reactants-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b00020; /* deep red */
+  margin-bottom: 0.5rem;
+}
+
+.reactants-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.reactant-tile-wrapper {
+  position: relative;
+  width: 75px;
+}
+
+.reactant-tile-wrapper .element {
+  width: 80px;
+}
+
+.reaction-result {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  color: #01579b; /* blue */
+  font-weight: bold;
+}
+

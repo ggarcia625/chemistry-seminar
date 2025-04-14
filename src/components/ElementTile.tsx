@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Element } from "../helpers/constants";
 
 interface ElementTileProps {
@@ -48,7 +48,7 @@ const ElementTile: React.FC<ElementTileProps> = ({
         background: chemicalGroupBackGroundColor[`${element.chemicalGroup}`],
       }}
       key={element.atomicNumber}
-      onClick={() => handleElementClick(element)}
+      onClick={() => handleElementClick?.(element)}
     >
       {!/\d/.test(element.symbol) ? (
         <span className="element-atomic-number">{element.atomicNumber}</span>

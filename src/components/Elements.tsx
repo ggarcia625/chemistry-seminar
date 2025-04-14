@@ -1,65 +1,91 @@
 import { useState } from "react";
 import ElementModal from "./ElementModal";
+import Reactants from "./Reactants";
 import {
   elementsNoActinidesOrLanthanides,
   Element,
   lanthanidesAndActinides,
 } from "../helpers/constants";
 import ElementTile from "./ElementTile";
-import Reactants from "./Reactants";
 
-const Elments: React.FC = () => {
+const Elements: React.FC = () => {
   const [selectedElement, setSelectedElement] = useState<Element | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [reactants, setReactants] = useState(false);
+  const [reactantMode, setReactantMode] = useState(false);
+  const [reactants, setReactants] = useState<Element[]>([]);
 
   const handleElementClick = (element: Element) => {
-    setSelectedElement(element);
-    setIsModalOpen(true);
+    if (reactantMode) {
+      const exists = reactants.some((e) => e.atomicNumber === element.atomicNumber);
+      if (exists) {
+        setReactants((prev) =>
+          prev.filter((e) => e.atomicNumber !== element.atomicNumber)
+        );
+      } else {
+        setReactants((prev) => [...prev, element]);
+      }
+    } else {
+      setSelectedElement(element);
+      setIsModalOpen(true);
+    }
   };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
+  const handleCloseModal = () => setIsModalOpen(false);
+  const toggleReactantMode = () => {
+    setReactantMode(!reactantMode);
+    setReactants([]); // optional: clear on toggle
   };
 
   return (
     <div>
-      {!reactants && (
-        <button onClick={() => setReactants(!reactants)}>Add Reactants</button>
-      )}
-      {/* {reactants && <Reactants />} */}
+      <button onClick={toggleReactantMode} >
+        {reactantMode ? "Exit Reactant Mode" : "Add Reactants"}
+      </button>
+
       <div className="periodic-table" key="upperTable">
-        {elementsNoActinidesOrLanthanides.map((element) => (
-          <>
-            {element.name !== "placeholder" ? (
-              <ElementTile
-                element={element}
-                handleElementClick={handleElementClick}
-              />
-            ) : (
-              <div></div>
-            )}
-          </>
-        ))}
+        {elementsNoActinidesOrLanthanides.map((element) =>
+          element.name !== "placeholder" ? (
+            <ElementTile
+              key={element.atomicNumber}
+              element={element}
+              handleElementClick={handleElementClick}
+            />
+          ) : (
+            <div key={element.atomicNumber}></div>
+          )
+        )}
       </div>
-      <div className="lan-act-container" key='lowerTable'>
+
+      <div className="lan-act-container" key="lowerTable">
         <div className="lan-act-spacer"></div>
         <div className="periodic-table-lanthanidesAndActinides">
           {lanthanidesAndActinides.map((element) => (
             <ElementTile
+              key={element.atomicNumber}
               element={element}
               handleElementClick={handleElementClick}
             />
           ))}
         </div>
       </div>
-      <ElementModal
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-        element={selectedElement!}
-      />
+
+      {reactantMode && (
+        <Reactants
+          selectedReactants={reactants}
+          setSelectedReactants={setReactants}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
+
+      {!reactantMode && selectedElement && (
+        <ElementModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          element={selectedElement}
+        />
+      )}
     </div>
   );
 };
 
-export default Elments;
+export default Elements;

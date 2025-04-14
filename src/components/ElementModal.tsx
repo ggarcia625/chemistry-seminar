@@ -1,23 +1,25 @@
 import React from "react";
-import { Element } from "../helpers/constants";
-import ElementTile from "./ElementTile";
-// symbol: "La", name: "Lanthanum", atomicNumber: 57, atomicWeight: 138.91, chemicalGroup: 'lanthanides', isShaking: false, reactants: false },
+
 interface ModalProps {
-  isOpen: Boolean;
-  element: Element;
+  isOpen: boolean;
   onClose: () => void;
+  element: { symbol: string; name: string; atomicNumber: number };
 }
+
 const ElementModal: React.FC<ModalProps> = ({ isOpen, onClose, element }) => {
   if (!isOpen) return null;
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div style={{ display: "flex", justifyContent: 'space-between', width: '800px', backgroundColor: 'fff' }}>
-        <ElementTile element={element}/>
-        <ElementTile element={element}/>
-        <ElementTile element={element}/>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <h2>
+          {element.name} ({element.symbol})
+        </h2>
+
+        <p>Atomic Number: {element.atomicNumber}</p>
+
+        <button onClick={onClose}>Close</button>
       </div>
-      <button onClick={onClose}>Close</button>
     </div>
   );
 };
