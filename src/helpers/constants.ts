@@ -9,7 +9,7 @@ export interface Element {
   name: string;
 }
 
-export const elementsNoActinidesOrLanthanides: Element[] = [
+export const mainTable: Element[] = [
   // Row 1
   {
     symbol: "H",
@@ -1159,7 +1159,7 @@ export const elementsNoActinidesOrLanthanides: Element[] = [
   },
 ];
 
-export const lanthanidesAndActinides = [
+export const fBlock = [
   // lanthanides
   {
     symbol: "La",

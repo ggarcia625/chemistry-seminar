@@ -2,9 +2,9 @@ import { useState } from "react";
 import ElementModal from "./ElementModal";
 import Reactants from "./Reactants";
 import {
-  elementsNoActinidesOrLanthanides,
+  mainTable,
   Element,
-  lanthanidesAndActinides,
+  fBlock,
 } from "../helpers/constants";
 import ElementTile from "./ElementTile";
 
@@ -33,7 +33,7 @@ const Elements: React.FC = () => {
   const handleCloseModal = () => setIsModalOpen(false);
   const toggleReactantMode = () => {
     setReactantMode(!reactantMode);
-    setReactants([]); // optional: clear on toggle
+    setReactants([]);
   };
 
   return (
@@ -46,7 +46,7 @@ const Elements: React.FC = () => {
       )}
 
       <div className="periodic-table" key="upperTable">
-        {elementsNoActinidesOrLanthanides.map((element) =>
+        {  mainTable.map((element) =>
           element.name !== "placeholder" ? (
             <ElementTile
               key={element.atomicNumber}
@@ -62,7 +62,7 @@ const Elements: React.FC = () => {
       <div className="lan-act-container" key="lowerTable">
         <div className="lan-act-spacer"></div>
         <div className="periodic-table-lanthanidesAndActinides">
-          {lanthanidesAndActinides.map((element) => (
+          {fBlock.map((element) => (
             <ElementTile
               key={element.atomicNumber}
               element={element}

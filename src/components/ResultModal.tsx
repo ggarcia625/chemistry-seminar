@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Reaction } from "../helpers/reactions";
 
 interface ModalProps {
@@ -8,8 +8,11 @@ interface ModalProps {
 }
 
 const ResultModal: React.FC<ModalProps> = ({ isOpen, onClose, result }) => {
+  const [currPhoto, setCurrPhoto] = useState<number>(0);
+  if (typeof result !== 'string' && result.photos.length <= currPhoto) {
+    setCurrPhoto(0);
+  }
   if (!isOpen) return null;
-
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -17,10 +20,16 @@ const ResultModal: React.FC<ModalProps> = ({ isOpen, onClose, result }) => {
           <h2>{result}</h2>
         ) : (
           <>
-            <h2>
-              {result.name} ({result.formula})
-            </h2>
+            <h2 style={{ margin: "0px" }}>{result.formula}</h2>
+            <span style={{ fontSize: "50px" }}>&#8595;</span>
+            <h2 style={{ margin: "0px" }}>{result.name}</h2>
             <p>{result.description}</p>
+            <div onClick={() => {setCurrPhoto(currPhoto + 1)}}>
+              <img
+                style={{ maxWidth: "1100px", flexGrow: "0.25" }}
+                src={result.photos[currPhoto]}
+              />
+            </div>
             <button onClick={onClose}>Close</button>
           </>
         )}

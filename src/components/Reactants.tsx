@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ElementTile from "./ElementTile";
-import { Element } from "../helpers/constants";
+import { Element, fBlock, mainTable } from "../helpers/constants";
 import { Reaction, reactions } from "../helpers/reactions";
 import ResultModal from "./ResultModal";
 
@@ -15,7 +15,6 @@ const Reactants: React.FC<ReactantsProps> = ({
 }) => {
   const [reactionResult, setReactionResult] = useState<Reaction | string>("");
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const handleReact = () => {
     const reactionKey = selectedReactants
       .map((e) => e.symbol)
@@ -24,8 +23,39 @@ const Reactants: React.FC<ReactantsProps> = ({
     const result: Reaction = reactions[reactionKey];
     setIsModalOpen(true);
     if (result) {
+      if (
+        result.atomicNums.every((val) =>
+          selectedReactants.some((item) => item.atomicNumber === val)
+        )
+      ) {
+        mainTable.forEach((element) => {
+          if (
+              element.atomicNumber === 6 ||
+              element.atomicNumber === 4 &&
+              reactionKey === "s+o+u+bi"
+          ) {
+            element.isShaking = true;
+            element.reactants = true;
+            fBlock[20].isShaking = true;
+            fBlock[20].reactants = true;
+            fBlock[18].reactants = false;
+            fBlock[18].isShaking = false;
+            mainTable[33].isShaking = false;
+            mainTable[51].isShaking = false;
+            mainTable[104].isShaking = false;
+            
+          }
+          if (
+            (element.atomicNumber === 14 ||
+              element.atomicNumber === 31) &&
+              reactionKey === "pu+be+c"
+          ) {
+            element.isShaking = true;
+            element.reactants = true;
+          }
+        });
+      }
       setReactionResult(result);
-      
     } else {
       setReactionResult(`No known reaction for ${reactionKey}`);
     }
@@ -37,23 +67,42 @@ const Reactants: React.FC<ReactantsProps> = ({
     );
   };
 
-  const handleCloseModal = () => setIsModalOpen(false);
+  const handleCloseModal = () => {
+    setSelectedReactants([]);
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="reactants-container">
       <h2 className="reactants-title">Selected Reactants</h2>
       <div className="reactants-grid">
-        {selectedReactants.map((element) => (
-          <div key={element.atomicNumber} className="reactant-tile-wrapper">
+        {selectedReactants.map((element, i) => (
+          <div
+            key={element.atomicNumber}
+            style={{ display: "flex", alignContent: "center" }}
+            className="reactant-tile-wrapper"
+          >
             <ElementTile
               element={element}
               handleElementClick={() => handleRemove(element.atomicNumber)}
             />
+            {selectedReactants.length > i + 1 && (
+              <p
+                style={{
+                  color: "rgb(0, 77, 64)",
+                  fontSize: "25px",
+                  textAlign: "center",
+                  marginLeft: "5px",
+                }}
+              >
+                +
+              </p>
+            )}
           </div>
         ))}
       </div>
       {selectedReactants.length > 0 && (
-        <button onClick={handleReact} className="react-btn">
+        <button onClick={handleReact} style={{ margin: "1rem" }}>
           React
         </button>
       )}
