@@ -1,11 +1,7 @@
 import { useState } from "react";
 import ElementModal from "./ElementModal";
 import Reactants from "./Reactants";
-import {
-  mainTable,
-  Element,
-  fBlock,
-} from "../helpers/constants";
+import { mainTable, Element, fBlock } from "../helpers/constants";
 import ElementTile from "./ElementTile";
 
 const Elements: React.FC = () => {
@@ -16,7 +12,9 @@ const Elements: React.FC = () => {
 
   const handleElementClick = (element: Element) => {
     if (reactantMode) {
-      const exists = reactants.some((e) => e.atomicNumber === element.atomicNumber);
+      const exists = reactants.some(
+        (e) => e.atomicNumber === element.atomicNumber
+      );
       if (exists) {
         setReactants((prev) =>
           prev.filter((e) => e.atomicNumber !== element.atomicNumber)
@@ -46,7 +44,7 @@ const Elements: React.FC = () => {
       )}
 
       <div className="periodic-table" key="upperTable">
-        {  mainTable.map((element) =>
+        {mainTable.map((element) =>
           element.name !== "placeholder" ? (
             <ElementTile
               key={element.atomicNumber}
@@ -79,7 +77,7 @@ const Elements: React.FC = () => {
           element={selectedElement}
         />
       )}
-       <button onClick={toggleReactantMode} style={{ marginTop: '25px' }}>
+      <button onClick={toggleReactantMode} style={{ marginTop: "25px" }}>
         {reactantMode ? "Exit Reactant Mode" : "Add Reactants"}
       </button>
     </div>

@@ -30,28 +30,41 @@ const Reactants: React.FC<ReactantsProps> = ({
       ) {
         mainTable.forEach((element) => {
           if (
-              element.atomicNumber === 6 ||
-              element.atomicNumber === 4 &&
-              reactionKey === "s+o+u+bi"
+            element.atomicNumber === 6 ||
+            (element.atomicNumber === 4 && reactionKey === "s+o+u+bi")
           ) {
             element.isShaking = true;
             element.reactants = true;
             fBlock[20].isShaking = true;
-            fBlock[20].reactants = true;
             fBlock[18].reactants = false;
             fBlock[18].isShaking = false;
             mainTable[33].isShaking = false;
             mainTable[51].isShaking = false;
             mainTable[104].isShaking = false;
-            
           }
           if (
-            (element.atomicNumber === 14 ||
-              element.atomicNumber === 31) &&
-              reactionKey === "pu+be+c"
+            (element.atomicNumber === 14 || element.atomicNumber === 31) &&
+            reactionKey === "pu+be+c"
           ) {
             element.isShaking = true;
             element.reactants = true;
+            mainTable[19].isShaking = false;
+            mainTable[31].isShaking = false;
+            fBlock[20].isShaking = false;
+          }
+          if (
+            (element.atomicNumber === 3 ||
+              element.atomicNumber === 23 ||
+              element.atomicNumber === 53 ||
+              element.atomicNumber === 52) &&
+            reactionKey === "si+ga"
+          ) {
+            element.isShaking = true;
+            mainTable[66].isShaking = false;
+            mainTable[49].isShaking = false;
+            mainTable[19].isShaking = false;
+            mainTable[31].isShaking = false;
+            fBlock[20].isShaking = false;
           }
         });
       }
