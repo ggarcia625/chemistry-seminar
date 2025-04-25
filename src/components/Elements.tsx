@@ -78,13 +78,36 @@ const Elements: React.FC = () => {
           element={selectedElement}
         />
       )}
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <button onClick={toggleReactantMode} style={{ marginTop: "25px", width: '200px', fontWeight: 'bold' }}>
-        {reactantMode ? "Exit Reactant Mode" : "Add Reactants"}
-      </button>
-      <a href="https://github.com/ggarcia625/chemistry-seminar/tree/main/src" target="_blank" rel="noopener noreferrer">
-      <button style={{ backgroundColor: 'rgb(10 25 47)', marginTop: "25px", width: '200px', fontWeight: 'bold' }}>Show Code {<FaGithub size='20' style={{ marginLeft: '5px' }}/>}</button>
-    </a></div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <button
+          onClick={toggleReactantMode}
+          style={{ marginTop: "25px", width: "200px", fontWeight: "bold" }}
+        >
+          {reactantMode ? "Exit Reactant Mode" : "Add Reactants"}
+        </button>
+        <a
+          href="https://github.com/ggarcia625/chemistry-seminar/tree/main/src"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button
+            style={{
+              backgroundColor: "rgb(10 25 47)",
+              marginTop: "25px",
+              width: "200px",
+              fontWeight: "bold",
+            }}
+          >
+            Show Code {<FaGithub size="20" style={{ marginLeft: "5px" }} />}
+          </button>
+        </a>
+      </div>
     </div>
   );
 };

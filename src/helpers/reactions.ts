@@ -1,11 +1,12 @@
 import code from "../../public/code.png";
 import lamResearch1 from "../../public/lam_research1.png";
-import lamResearch2 from "../../public/lam_research1.png";
-import lamResearch3 from "../../public/lam_research1.png";
+import lamResearch2 from "../../public/lam_research2.png";
+import lamResearch3 from "../../public/lam_research3.png";
 import slowNeutron from "../../public/slow_neutrons.png";
 import pic1 from "../../public/pic1.jpg";
 import pic2 from "../../public/pic2.png";
 import pic3 from "../../public/pic3.png";
+import portBachPay from '../../public/post_bach_pay.png'
 import reactIcon from "../../public/react-svgrepo-com.svg";
 import SOAR from "../../public/SOAR_POSTER.png";
 import viteIcon from "../../public/vite-svgrepo-com.svg";
@@ -46,11 +47,11 @@ export const reactions: reactantsType = {
     atomicNums: [14, 31],
   },
   "li+v+i+te": {
-    formula: "Li+V+I+TE",
+    formula: "Li+V+I+Te",
     name: "React + Vite + MERN",
     description:
-      "Modern web development is mostly React.js based using Vite as the frame work. MongoDB, Express.js, React.js, Node.js (MERN) tech stack building document generation systems of record to replace ambiguous inefficient paper forms",
-    photos: [reactIcon, viteIcon, code],
+      "Modern web development is mostly React.js based using Vite as the frame work. MongoDB, Express.js, React.js, Node.js (MERN) tech stack building document generation systems of record to replace ambiguous inefficient paper forms. Post-Bachelor's pay rate: $32.93/hr | $68,490/yr",
+    photos: [reactIcon, viteIcon, code, portBachPay],
     atomicNums: [14, 31],
   },
 };

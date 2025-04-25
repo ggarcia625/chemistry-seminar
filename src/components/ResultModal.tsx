@@ -9,7 +9,7 @@ interface ModalProps {
 
 const ResultModal: React.FC<ModalProps> = ({ isOpen, onClose, result }) => {
   const [currPhoto, setCurrPhoto] = useState<number>(0);
-  if (typeof result !== 'string' && result.photos.length <= currPhoto) {
+  if (typeof result !== "string" && result.photos.length <= currPhoto) {
     setCurrPhoto(0);
   }
   if (!isOpen) return null;
@@ -24,13 +24,25 @@ const ResultModal: React.FC<ModalProps> = ({ isOpen, onClose, result }) => {
             <span style={{ fontSize: "50px" }}>&#8595;</span>
             <h2 style={{ margin: "0px" }}>{result.name}</h2>
             <p>{result.description}</p>
-            <div onClick={() => {setCurrPhoto(currPhoto + 1)}}>
+            <div
+              onClick={() => {
+                setCurrPhoto(currPhoto + 1);
+              }}
+            >
               <img
                 style={{ maxWidth: "1100px", flexGrow: "0.25" }}
                 src={result.photos[currPhoto]}
               />
             </div>
-            <button onClick={onClose}>Close</button>
+
+            {result.formula === 'Li+V+I+Te' ? <a
+              href="https://lanl.jobs/search/searchjobs?categoryid=970df014-0e9c-4334-b0ae-82ec716f9566&posteddate=3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>LANL Jobs</button>
+            </a> :
+            <button onClick={onClose}>Close</button>}
           </>
         )}
       </div>
