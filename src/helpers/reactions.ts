@@ -1,15 +1,15 @@
 import code from "../../public/code.png";
-import lamResearch1 from "../../public/lam_research1.png";
-import lamResearch2 from "../../public/lam_research2.png";
-import lamResearch3 from "../../public/lam_research3.png";
-import slowNeutron from "../../public/slow_neutrons.png";
-import pic1 from "../../public/pic1.jpg";
-import pic2 from "../../public/pic2.png";
-import pic3 from "../../public/pic3.png";
-import portBachPay from '../../public/post_bach_pay.png'
-import reactIcon from "../../public/react-svgrepo-com.svg";
-import SOAR from "../../public/SOAR_POSTER.png";
-import viteIcon from "../../public/vite-svgrepo-com.svg";
+import lamResearch1 from "../assets/lam_research1.png";
+import lamResearch2 from "../assets/lam_research2.png";
+import lamResearch3 from "../assets/lam_research3.png";
+import slowNeutron from "../assets/slow_neutrons.png";
+import lanl1 from "../assets/lanl1.jpg";
+import lanl2 from "../assets/lanl2.png";
+import lanl3 from "../assets/lanl3.png";
+import portBachPay from '../assets/post_bach_pay.png'
+import reactIcon from "../assets/react.svg";
+import SOAR from "../assets/SOAR_POSTER.png";
+import viteIcon from "../assets/vite.svg";
 
 export interface Reaction {
   formula: string;
@@ -35,7 +35,7 @@ export const reactions: reactantsType = {
     name: "LANL Nuclear Weapons Manufacturing",
     description:
       "Plutonium, Moderators, Beryllium, and CBD. Slowed down (thermal) neutrons result in higher critically chance. Thermal neutrons lose 99.9999% of kinetic energy, from 20000 km/s to 2.2 km/s. 0.08 mm dispersed into the area of a football field",
-    photos: [pic1, pic2, pic3, slowNeutron],
+    photos: [lanl1, lanl2, lanl3, slowNeutron],
     atomicNums: [94, 4, 6],
   },
   "si+ga": {

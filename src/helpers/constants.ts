@@ -4,13 +4,12 @@ export interface Element {
   atomicWeight: number;
   chemicalGroup: string;
   isShaking: boolean;
-  reactants: boolean;
   symbol: string;
   name: string;
 }
 
 export const mainTable: Element[] = [
-  // Row 1
+  // Row 1 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   {
     symbol: "H",
     name: "Hydrogen",
@@ -18,7 +17,6 @@ export const mainTable: Element[] = [
     atomicWeight: 1.008,
     chemicalGroup: "nonmetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -27,7 +25,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -36,7 +33,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -45,7 +41,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -54,7 +49,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -63,7 +57,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -72,7 +65,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -81,7 +73,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -90,7 +81,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -99,7 +89,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -108,7 +97,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -117,7 +105,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -126,7 +113,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -135,7 +121,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -144,7 +129,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -153,7 +137,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -162,7 +145,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "He",
@@ -171,10 +153,9 @@ export const mainTable: Element[] = [
     atomicWeight: 4.0026,
     chemicalGroup: "nobleGas",
     isShaking: false,
-    reactants: false,
   },
 
-  // Row 2
+  // Row 2 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   {
     symbol: "Li",
     name: "Lithium",
@@ -182,7 +163,6 @@ export const mainTable: Element[] = [
     atomicWeight: 6.94,
     chemicalGroup: "alkaliMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Be",
@@ -191,7 +171,6 @@ export const mainTable: Element[] = [
     atomicWeight: 9.1022,
     chemicalGroup: "alkalineEarthMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -200,7 +179,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -209,7 +187,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -218,7 +195,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -227,7 +203,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -236,7 +211,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -245,7 +219,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -254,7 +227,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -263,7 +235,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -272,7 +243,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -281,7 +251,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "B",
@@ -290,7 +259,6 @@ export const mainTable: Element[] = [
     atomicWeight: 10.81,
     chemicalGroup: "metalloid",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "C",
@@ -299,7 +267,6 @@ export const mainTable: Element[] = [
     atomicWeight: 12.01,
     chemicalGroup: "nonmetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "N",
@@ -308,7 +275,6 @@ export const mainTable: Element[] = [
     atomicWeight: 14.007,
     chemicalGroup: "nonmetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "O",
@@ -317,7 +283,6 @@ export const mainTable: Element[] = [
     atomicWeight: 16.0,
     chemicalGroup: "nonmetal",
     isShaking: true,
-    reactants: true,
   },
   {
     symbol: "F",
@@ -326,7 +291,6 @@ export const mainTable: Element[] = [
     atomicWeight: 18.998,
     chemicalGroup: "halogen",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ne",
@@ -335,10 +299,9 @@ export const mainTable: Element[] = [
     atomicWeight: 20.18,
     chemicalGroup: "nobleGas",
     isShaking: false,
-    reactants: false,
   },
 
-  // Row 3
+  // Row 3 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   {
     symbol: "Na",
     name: "Sodium",
@@ -346,7 +309,6 @@ export const mainTable: Element[] = [
     atomicWeight: 22.99,
     chemicalGroup: "alkaliMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Mg",
@@ -355,7 +317,6 @@ export const mainTable: Element[] = [
     atomicWeight: 24.305,
     chemicalGroup: "alkalineEarthMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -364,7 +325,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -373,7 +333,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -382,7 +341,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -391,7 +349,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -400,7 +357,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -409,7 +365,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -418,7 +373,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -427,7 +381,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -436,7 +389,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "H",
@@ -445,7 +397,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "hydrogen",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Al",
@@ -454,7 +405,6 @@ export const mainTable: Element[] = [
     atomicWeight: 26.982,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Si",
@@ -463,7 +413,6 @@ export const mainTable: Element[] = [
     atomicWeight: 28.085,
     chemicalGroup: "metalloid",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "P",
@@ -472,7 +421,6 @@ export const mainTable: Element[] = [
     atomicWeight: 30.974,
     chemicalGroup: "nonmetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "S",
@@ -481,7 +429,7 @@ export const mainTable: Element[] = [
     atomicWeight: 32.06,
     chemicalGroup: "nonmetal",
     isShaking: true,
-    reactants: true,
+
   },
   {
     symbol: "Cl",
@@ -490,7 +438,6 @@ export const mainTable: Element[] = [
     atomicWeight: 35.45,
     chemicalGroup: "halogen",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ar",
@@ -499,10 +446,9 @@ export const mainTable: Element[] = [
     atomicWeight: 39.948,
     chemicalGroup: "nobleGas",
     isShaking: false,
-    reactants: false,
   },
 
-  // Row 4
+  // Row 4 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   {
     symbol: "K",
     name: "Potassium",
@@ -510,7 +456,6 @@ export const mainTable: Element[] = [
     atomicWeight: 39.098,
     chemicalGroup: "alkaliMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ca",
@@ -519,7 +464,6 @@ export const mainTable: Element[] = [
     atomicWeight: 40.078,
     chemicalGroup: "alkalineEarthMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Sc",
@@ -528,7 +472,6 @@ export const mainTable: Element[] = [
     atomicWeight: 44.956,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ti",
@@ -537,7 +480,6 @@ export const mainTable: Element[] = [
     atomicWeight: 47.867,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "V",
@@ -546,7 +488,6 @@ export const mainTable: Element[] = [
     atomicWeight: 50.942,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Cr",
@@ -555,7 +496,6 @@ export const mainTable: Element[] = [
     atomicWeight: 51.996,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Mn",
@@ -564,7 +504,6 @@ export const mainTable: Element[] = [
     atomicWeight: 54.938,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Fe",
@@ -573,7 +512,6 @@ export const mainTable: Element[] = [
     atomicWeight: 55.845,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Co",
@@ -582,7 +520,6 @@ export const mainTable: Element[] = [
     atomicWeight: 58.933,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ni",
@@ -591,7 +528,6 @@ export const mainTable: Element[] = [
     atomicWeight: 58.693,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Cu",
@@ -600,7 +536,6 @@ export const mainTable: Element[] = [
     atomicWeight: 63.546,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Zn",
@@ -609,7 +544,6 @@ export const mainTable: Element[] = [
     atomicWeight: 65.38,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ga",
@@ -618,7 +552,6 @@ export const mainTable: Element[] = [
     atomicWeight: 69.723,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ge",
@@ -627,7 +560,6 @@ export const mainTable: Element[] = [
     atomicWeight: 72.63,
     chemicalGroup: "metalloid",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "As",
@@ -636,7 +568,6 @@ export const mainTable: Element[] = [
     atomicWeight: 74.922,
     chemicalGroup: "metalloid",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Se",
@@ -645,7 +576,6 @@ export const mainTable: Element[] = [
     atomicWeight: 78.971,
     chemicalGroup: "nonmetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Br",
@@ -654,7 +584,6 @@ export const mainTable: Element[] = [
     atomicWeight: 79.904,
     chemicalGroup: "halogen",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Kr",
@@ -663,10 +592,9 @@ export const mainTable: Element[] = [
     atomicWeight: 83.798,
     chemicalGroup: "nobleGas",
     isShaking: false,
-    reactants: false,
   },
 
-  // Row 5
+  // Row 5 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   {
     symbol: "Rb",
     name: "Rubidium",
@@ -674,7 +602,6 @@ export const mainTable: Element[] = [
     atomicWeight: 85.468,
     chemicalGroup: "alkaliMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Sr",
@@ -683,7 +610,6 @@ export const mainTable: Element[] = [
     atomicWeight: 87.62,
     chemicalGroup: "alkalineEarthMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Y",
@@ -692,7 +618,6 @@ export const mainTable: Element[] = [
     atomicWeight: 88.906,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Zr",
@@ -701,7 +626,6 @@ export const mainTable: Element[] = [
     atomicWeight: 91.224,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Nb",
@@ -710,7 +634,6 @@ export const mainTable: Element[] = [
     atomicWeight: 92.906,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Mo",
@@ -719,7 +642,6 @@ export const mainTable: Element[] = [
     atomicWeight: 95.95,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Tc",
@@ -728,7 +650,6 @@ export const mainTable: Element[] = [
     atomicWeight: 98,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ru",
@@ -737,7 +658,6 @@ export const mainTable: Element[] = [
     atomicWeight: 101.07,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Rh",
@@ -746,7 +666,6 @@ export const mainTable: Element[] = [
     atomicWeight: 102.91,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Pd",
@@ -755,7 +674,6 @@ export const mainTable: Element[] = [
     atomicWeight: 106.42,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ag",
@@ -764,7 +682,6 @@ export const mainTable: Element[] = [
     atomicWeight: 107.87,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Cd",
@@ -773,7 +690,6 @@ export const mainTable: Element[] = [
     atomicWeight: 112.41,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "In",
@@ -782,7 +698,6 @@ export const mainTable: Element[] = [
     atomicWeight: 114.82,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Sn",
@@ -791,7 +706,6 @@ export const mainTable: Element[] = [
     atomicWeight: 118.71,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Sb",
@@ -800,7 +714,6 @@ export const mainTable: Element[] = [
     atomicWeight: 121.76,
     chemicalGroup: "metalloid",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Te",
@@ -809,7 +722,6 @@ export const mainTable: Element[] = [
     atomicWeight: 127.6,
     chemicalGroup: "metalloid",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "I",
@@ -818,7 +730,6 @@ export const mainTable: Element[] = [
     atomicWeight: 126.905,
     chemicalGroup: "halogen",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Xe",
@@ -827,10 +738,9 @@ export const mainTable: Element[] = [
     atomicWeight: 131.29,
     chemicalGroup: "nobleGas",
     isShaking: false,
-    reactants: false,
   },
 
-  // Row 6
+  // Row 6 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   {
     symbol: "Cs",
     name: "Cesium",
@@ -838,7 +748,6 @@ export const mainTable: Element[] = [
     atomicWeight: 132.91,
     chemicalGroup: "alkaliMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ba",
@@ -847,7 +756,6 @@ export const mainTable: Element[] = [
     atomicWeight: 137.33,
     chemicalGroup: "alkalineEarthMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "57-71",
@@ -856,7 +764,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "lanthanides",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Hf",
@@ -865,7 +772,6 @@ export const mainTable: Element[] = [
     atomicWeight: 178.49,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ta",
@@ -874,7 +780,6 @@ export const mainTable: Element[] = [
     atomicWeight: 180.95,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "W",
@@ -883,7 +788,6 @@ export const mainTable: Element[] = [
     atomicWeight: 183.84,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Re",
@@ -892,7 +796,6 @@ export const mainTable: Element[] = [
     atomicWeight: 186.21,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Os",
@@ -901,7 +804,6 @@ export const mainTable: Element[] = [
     atomicWeight: 190.23,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ir",
@@ -910,7 +812,6 @@ export const mainTable: Element[] = [
     atomicWeight: 192.22,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Pt",
@@ -919,7 +820,6 @@ export const mainTable: Element[] = [
     atomicWeight: 195.08,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Au",
@@ -928,7 +828,6 @@ export const mainTable: Element[] = [
     atomicWeight: 196.97,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Hg",
@@ -937,7 +836,6 @@ export const mainTable: Element[] = [
     atomicWeight: 200.59,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Tl",
@@ -946,7 +844,6 @@ export const mainTable: Element[] = [
     atomicWeight: 204.38,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Pb",
@@ -955,7 +852,6 @@ export const mainTable: Element[] = [
     atomicWeight: 207.2,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Bi",
@@ -964,7 +860,7 @@ export const mainTable: Element[] = [
     atomicWeight: 208.98,
     chemicalGroup: "postTransitionMetal",
     isShaking: true,
-    reactants: true,
+
   },
   {
     symbol: "Po",
@@ -973,7 +869,6 @@ export const mainTable: Element[] = [
     atomicWeight: 209,
     chemicalGroup: "metalloid",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "At",
@@ -982,7 +877,6 @@ export const mainTable: Element[] = [
     atomicWeight: 210,
     chemicalGroup: "halogen",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Rn",
@@ -991,10 +885,9 @@ export const mainTable: Element[] = [
     atomicWeight: 222,
     chemicalGroup: "nobleGas",
     isShaking: false,
-    reactants: false,
   },
 
-  // Row 7
+  // Row 7 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   {
     symbol: "Fr",
     name: "Francium",
@@ -1002,7 +895,6 @@ export const mainTable: Element[] = [
     atomicWeight: 223,
     chemicalGroup: "alkaliMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ra",
@@ -1011,7 +903,6 @@ export const mainTable: Element[] = [
     atomicWeight: 226,
     chemicalGroup: "alkalineEarthMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "89-103",
@@ -1020,7 +911,6 @@ export const mainTable: Element[] = [
     chemicalGroup: "actinides",
     atomicWeight: 1,
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Rf",
@@ -1029,7 +919,6 @@ export const mainTable: Element[] = [
     atomicWeight: 267,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Db",
@@ -1038,7 +927,6 @@ export const mainTable: Element[] = [
     atomicWeight: 270,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Sg",
@@ -1047,7 +935,6 @@ export const mainTable: Element[] = [
     atomicWeight: 271,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Bh",
@@ -1056,7 +943,6 @@ export const mainTable: Element[] = [
     atomicWeight: 270,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Hs",
@@ -1065,7 +951,6 @@ export const mainTable: Element[] = [
     atomicWeight: 277,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Mt",
@@ -1074,7 +959,6 @@ export const mainTable: Element[] = [
     atomicWeight: 278,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ds",
@@ -1083,7 +967,6 @@ export const mainTable: Element[] = [
     atomicWeight: 281,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Rg",
@@ -1092,7 +975,6 @@ export const mainTable: Element[] = [
     atomicWeight: 282,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Cn",
@@ -1101,7 +983,6 @@ export const mainTable: Element[] = [
     atomicWeight: 285,
     chemicalGroup: "transitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Nh",
@@ -1110,7 +991,6 @@ export const mainTable: Element[] = [
     atomicWeight: 286,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Fl",
@@ -1119,7 +999,6 @@ export const mainTable: Element[] = [
     atomicWeight: 289,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Mc",
@@ -1128,7 +1007,6 @@ export const mainTable: Element[] = [
     atomicWeight: 290,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Lv",
@@ -1137,7 +1015,6 @@ export const mainTable: Element[] = [
     atomicWeight: 293,
     chemicalGroup: "postTransitionMetal",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ts",
@@ -1146,7 +1023,6 @@ export const mainTable: Element[] = [
     atomicWeight: 294,
     chemicalGroup: "halogen",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Og",
@@ -1155,12 +1031,11 @@ export const mainTable: Element[] = [
     atomicWeight: 294,
     chemicalGroup: "nobleGas",
     isShaking: false,
-    reactants: false,
   },
 ];
 
 export const fBlock = [
-  // lanthanides
+  // lanthanides +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   {
     symbol: "La",
     name: "Lanthanum",
@@ -1168,7 +1043,6 @@ export const fBlock = [
     atomicWeight: 138.91,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ce",
@@ -1177,7 +1051,6 @@ export const fBlock = [
     atomicWeight: 140.12,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Pr",
@@ -1186,7 +1059,6 @@ export const fBlock = [
     atomicWeight: 140.91,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Nd",
@@ -1195,7 +1067,6 @@ export const fBlock = [
     atomicWeight: 144.24,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Pm",
@@ -1204,7 +1075,6 @@ export const fBlock = [
     atomicWeight: 145,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Sm",
@@ -1213,7 +1083,6 @@ export const fBlock = [
     atomicWeight: 150.36,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Eu",
@@ -1222,7 +1091,6 @@ export const fBlock = [
     atomicWeight: 151.96,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Gd",
@@ -1231,7 +1099,6 @@ export const fBlock = [
     atomicWeight: 157.25,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Tb",
@@ -1240,7 +1107,6 @@ export const fBlock = [
     atomicWeight: 158.93,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Dy",
@@ -1249,7 +1115,6 @@ export const fBlock = [
     atomicWeight: 162.5,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Ho",
@@ -1258,7 +1123,6 @@ export const fBlock = [
     atomicWeight: 164.93,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Er",
@@ -1267,7 +1131,6 @@ export const fBlock = [
     atomicWeight: 167.26,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Tm",
@@ -1276,7 +1139,6 @@ export const fBlock = [
     atomicWeight: 168.93,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Yb",
@@ -1285,7 +1147,6 @@ export const fBlock = [
     atomicWeight: 173.05,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Lu",
@@ -1294,10 +1155,9 @@ export const fBlock = [
     atomicWeight: 174.97,
     chemicalGroup: "lanthanides",
     isShaking: false,
-    reactants: false,
   },
 
-  // actinides
+  // actinides +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   {
     symbol: "Ac",
     name: "Actinium",
@@ -1305,7 +1165,6 @@ export const fBlock = [
     atomicWeight: 227,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Th",
@@ -1314,7 +1173,6 @@ export const fBlock = [
     atomicWeight: 232.04,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Pa",
@@ -1323,7 +1181,6 @@ export const fBlock = [
     atomicWeight: 231.04,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "U",
@@ -1332,7 +1189,7 @@ export const fBlock = [
     atomicWeight: 238.03,
     chemicalGroup: "actinides",
     isShaking: true,
-    reactants: true,
+
   },
   {
     symbol: "Np",
@@ -1341,7 +1198,6 @@ export const fBlock = [
     atomicWeight: 237,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Pu",
@@ -1350,7 +1206,6 @@ export const fBlock = [
     atomicWeight: 244,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Am",
@@ -1359,7 +1214,6 @@ export const fBlock = [
     atomicWeight: 243,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Cm",
@@ -1368,7 +1222,6 @@ export const fBlock = [
     atomicWeight: 247,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Bk",
@@ -1377,7 +1230,6 @@ export const fBlock = [
     atomicWeight: 247,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Cf",
@@ -1386,7 +1238,6 @@ export const fBlock = [
     atomicWeight: 251,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Es",
@@ -1395,7 +1246,6 @@ export const fBlock = [
     atomicWeight: 252,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Fm",
@@ -1404,7 +1254,6 @@ export const fBlock = [
     atomicWeight: 257,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Md",
@@ -1413,7 +1262,6 @@ export const fBlock = [
     atomicWeight: 258,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "No",
@@ -1422,7 +1270,6 @@ export const fBlock = [
     atomicWeight: 259,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
   {
     symbol: "Lr",
@@ -1431,6 +1278,5 @@ export const fBlock = [
     atomicWeight: 266,
     chemicalGroup: "actinides",
     isShaking: false,
-    reactants: false,
   },
 ];

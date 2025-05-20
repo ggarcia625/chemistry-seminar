@@ -30,7 +30,7 @@ const ResultModal: React.FC<ModalProps> = ({ isOpen, onClose, result }) => {
               }}
             >
               <img
-                style={{ maxWidth: "1100px", flexGrow: "0.25" }}
+                style={{ maxWidth: "900px", flexGrow: "0.25" }}
                 src={result.photos[currPhoto]}
               />
             </div>

@@ -9,6 +9,7 @@ const PeriodicTable: React.FC = () => {
         style={{
           display: "flex",
           justifyContent: "space-between",
+          
         }}
       >
         <img src={ascLogo} height="100" width="300" />
@@ -18,7 +19,7 @@ const PeriodicTable: React.FC = () => {
             color: "rgb(0, 41, 207)",
             width: "60%",
             padding: "1rem",
-            marginTop: 0,
+            margin: 0,
           }}
           className="sliced-element"
         >
