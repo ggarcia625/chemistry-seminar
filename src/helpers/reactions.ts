@@ -1,4 +1,4 @@
-import code from "../../public/code.png";
+import code from "../assets/code.png";
 import lamResearch1 from "../assets/lam_research1.png";
 import lamResearch2 from "../assets/lam_research2.png";
 import lamResearch3 from "../assets/lam_research3.png";
